@@ -2,9 +2,9 @@ package eventuate_test
 
 import (
 	"fmt"
-	"github.com/shopcookeat/eventuate-client-golang"
-	"github.com/shopcookeat/eventuate-client-golang/future"
-	loglib "github.com/shopcookeat/eventuate-client-golang/logger"
+	"github.com/eventuate-clients/eventuate-client-golang"
+	"github.com/eventuate-clients/eventuate-client-golang/future"
+	loglib "github.com/eventuate-clients/eventuate-client-golang/logger"
 	"math"
 	"testing"
 	"time"

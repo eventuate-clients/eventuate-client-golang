@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	//"github.com/shopcookeat/eventuate-client-golang"
+	//"github.com/eventuate-clients/eventuate-client-golang"
 	"github.com/stretchr/testify/assert"
 )
 

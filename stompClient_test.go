@@ -4,7 +4,7 @@ import (
 	"log"
 	//"net/url"
 	_ "testing"
-	"github.com/shopcookeat/eventuate-client-golang"
+	"github.com/eventuate-clients/eventuate-client-golang"
 )
 
 func ExampleNewStompClient() {

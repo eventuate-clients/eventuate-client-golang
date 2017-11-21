@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/xeipuuv/gojsonschema"
-	"github.com/shopcookeat/eventuate-client-golang"
+	"github.com/eventuate-clients/eventuate-client-golang"
 )
 
 const APPLICATION_NAMESPACE = "net.chrisrichardson.eventstore.example.todo"

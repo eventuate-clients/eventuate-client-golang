@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gmallard/stompngo"
-	loglib "github.com/shopcookeat/eventuate-client-golang/logger"
+	loglib "github.com/eventuate-clients/eventuate-client-golang/logger"
 	"strings"
 	"sync"
 	"time"

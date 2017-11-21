@@ -3,7 +3,7 @@ package future
 import (
 	"errors"
 	"fmt"
-	loglib "github.com/shopcookeat/eventuate-client-golang/logger"
+	loglib "github.com/eventuate-clients/eventuate-client-golang/logger"
 	"sync"
 	"time"
 )

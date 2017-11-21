@@ -1,6 +1,6 @@
 package eventuate
 
-import "github.com/shopcookeat/eventuate-client-golang/future"
+import "github.com/eventuate-clients/eventuate-client-golang/future"
 
 type EventResultHandler func(interface{}, *EventMetadata) future.Settler
 type EventResultHandlerMap map[string]map[string]EventResultHandler

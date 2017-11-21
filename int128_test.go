@@ -2,7 +2,7 @@ package eventuate_test
 
 import (
 	"encoding/json"
-	"github.com/shopcookeat/eventuate-client-golang"
+	"github.com/eventuate-clients/eventuate-client-golang"
 	"testing"
 )
 

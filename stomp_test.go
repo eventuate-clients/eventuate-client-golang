@@ -9,7 +9,7 @@ import (
 	//"github.com/gmallard/stompngo"
 	"github.com/stretchr/testify/assert"
 	"github.com/xeipuuv/gojsonschema"
-	"github.com/shopcookeat/eventuate-client-golang"
+	"github.com/eventuate-clients/eventuate-client-golang"
 )
 
 func TestStompJsonSchemas(t *testing.T) {

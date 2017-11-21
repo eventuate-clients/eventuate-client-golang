@@ -2,7 +2,7 @@ package future_test
 
 import (
 	"errors"
-	"github.com/shopcookeat/eventuate-client-golang/future"
+	"github.com/eventuate-clients/eventuate-client-golang/future"
 	"reflect"
 	"sync"
 	"testing"

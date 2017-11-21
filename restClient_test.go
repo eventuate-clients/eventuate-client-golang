@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/shopcookeat/eventuate-client-golang"
+	"github.com/eventuate-clients/eventuate-client-golang"
 )
 
 const NAMESPACE = "ns12345678"

@@ -1,7 +1,7 @@
 package eventuate
 
-import "github.com/shopcookeat/eventuate-client-golang/future"
-import loglib "github.com/shopcookeat/eventuate-client-golang/logger"
+import "github.com/eventuate-clients/eventuate-client-golang/future"
+import loglib "github.com/eventuate-clients/eventuate-client-golang/logger"
 
 type EventDispatcher struct {
 	handlers *EventResultHandlerMap

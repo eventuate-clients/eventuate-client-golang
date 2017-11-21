@@ -1,8 +1,8 @@
 package eventuate
 
 import (
-	"github.com/shopcookeat/eventuate-client-golang/future"
-	loglib "github.com/shopcookeat/eventuate-client-golang/logger"
+	"github.com/eventuate-clients/eventuate-client-golang/future"
+	loglib "github.com/eventuate-clients/eventuate-client-golang/logger"
 )
 
 type eventPack struct {

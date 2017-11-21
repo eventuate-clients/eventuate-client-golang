@@ -1,6 +1,6 @@
 package eventuate
 
-import loglib "github.com/shopcookeat/eventuate-client-golang/logger"
+import loglib "github.com/eventuate-clients/eventuate-client-golang/logger"
 
 type ClientBuilderInstance struct {
 	overrideCredentials bool
