@@ -1,0 +1,17 @@
+{
+      "type": "object",
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "id": "https://api.eventuate.io/schemas/v1/create-response.schema",
+
+      "properties": {
+        "error": {
+          "type": "string",
+          "enum" : ["optimistic_lock_error", "entity_exists", "duplicate_event", "entity_temporarily_unavailable"]
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [ "error", "explanation" ]
+}

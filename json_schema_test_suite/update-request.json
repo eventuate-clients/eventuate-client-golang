@@ -1,0 +1,32 @@
+{
+      "type": "object",
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "id": "https://api.eventuate.io/schemas/v1/update-request.schema",
+      "properties": {
+        "events": {
+          "type": "array",
+          "minItems": 1,
+          "items" : {
+              "type" : "object",
+              "properties" : {
+                  "eventType" : {
+                    "type": "string"
+                  },
+                  "eventData" : {
+                    "type": "string"
+                  }
+              },
+              "additionalProperties": false,
+              "required" : ["eventType", "eventData"]
+          }
+        },
+        "entityVersion" : {
+          "type": "string"
+        },
+        "triggeringEventToken" : {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required" : ["events", "entityVersion"]
+    }

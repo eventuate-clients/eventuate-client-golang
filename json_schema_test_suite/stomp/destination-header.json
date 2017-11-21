@@ -1,0 +1,33 @@
+{
+      "type": "object",
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "id": "https://api.eventuate.io/schemas/v1/destination-header.schema",
+      "description" : "The format of the destination header in a STOMP SUBSCRIBE frame",
+      "properties": {
+        "subscriberId": {
+          "type": "string"
+        },
+        "space": {
+          "type": "string"
+        },
+        "entityTypesAndEvents": {
+          "type": "object"
+        },
+        "options" : {
+          "type" : "object",
+          "properties" : {
+            "durability" : {
+              "type" : "string"
+            },
+            "readFrom" : {
+              "type" : "string"
+            },
+            "progressNotifications" : {
+              "type" : "boolean"
+            }
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required" : ["subscriberId", "entityTypesAndEvents"]
+    }

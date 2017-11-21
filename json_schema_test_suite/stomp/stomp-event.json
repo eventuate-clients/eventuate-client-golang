@@ -1,0 +1,37 @@
+{
+      "type": "object",
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "id": "https://api.eventuate.io/schemas/v1/stomp-event.schema",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "eventType": {
+          "type": "string"
+        },
+        "eventData": {
+          "type": "string"
+        },
+        "entityId": {
+          "type": "string"
+        },
+        "entityType": {
+          "type": "string"
+        },
+        "eventToken": {
+          "description" : "Include in HTTP requests for indempotent event handling",
+          "type": "string"
+        },
+        "swimlane": {
+          "description" : "Each entity maps to a particular swimlane. Use for concurrent event processing",
+          "type": "number"
+        },
+        "offset": {
+          "description" : "A monitonically increasing value within a swimlane",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false,
+      "required" : ["id", "eventType", "eventData", "entityId", "entityType",
+        "eventToken", "swimlane", "offset"]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "https://api.eventuate.io/schemas/v1/definitions.schema",
+  "definitions": {
+    "eventIdAndType": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "eventType": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [ "id", "eventType" ]
+    },
+    "entityIdAndType": {
+      "type": "object",
+      "properties": {
+        "entityId": {
+          "type": "string"
+        },
+        "entityType": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [ "entityId", "entityType" ]
+    }
+  }
+}
