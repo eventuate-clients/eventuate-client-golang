@@ -2,9 +2,9 @@
 
 ## Install
 
-To install this package run 
+To install this package run
 ```bash
-go get github.com/shopcookeat/eventuate-client-golang
+go get https://github.com/eventuate-clients/eventuate-client-golang
 ```
 or clone/create this package as git submodule for your projects vendor directory.
 
@@ -12,7 +12,7 @@ or clone/create this package as git submodule for your projects vendor directory
 
 To use the library, import it with the statement:
 ```go
-import  eventuate "github.com/shopcookeat/eventuate-client-golang"
+import  eventuate "https://github.com/eventuate-clients/eventuate-client-golang"
 ```
 
 
@@ -25,7 +25,7 @@ In the Eventuate programming model, the majority of your application's business 
 * Processes commands and returns events, which leaves the state of the aggregate unchanged.
 * Consumes events, which updates its state.
 
-The [Eventuate client framework for Golang](https://github.com/shopcookeat/eventuate-client-golang) relies on a simple way to define aggregates.
+The [Eventuate client framework for Golang](https://https://github.com/eventuate-clients/eventuate-client-golang) relies on a simple way to define aggregates.
 
 It has to be a public type, like so:
 ```go
@@ -61,11 +61,11 @@ const FOOBAR_ENTITY = "golang.FooBarApplication.examples.FooBarEntity"
 
 ### Commands and events
 
-As mentioned above, the Aggregate processes commands (returning events and leaving its state unchanged) and consumes events (which update its state). 
+As mentioned above, the Aggregate processes commands (returning events and leaving its state unchanged) and consumes events (which update its state).
 
 A command is a desired action to be performed on the instance of an up-to-date entity. Once processed, it generates one or several, or none, events ('increased this', 'decreased that', 'signaled an error', etc.). A command is not supposed to get serialized or passed outside of the boundaries of a local code.
 
-Events, on the other hand, are designed to be serialized and passed on to the Eventuate server. They carry bits of data, which, when applied in order, recreate an entity's instance in its current state. 
+Events, on the other hand, are designed to be serialized and passed on to the Eventuate server. They carry bits of data, which, when applied in order, recreate an entity's instance in its current state.
 
 
 #### Commands
@@ -326,7 +326,7 @@ entityEventTypeMap := eventuate.EventResultHandlerMap{
     FOOBAR_ENTITY: {
         FOOBAR_FOO_EVENT: testResult.generalResultEventHandler,
         FOOBAR_BAR_EVENT: testResult.generalResultEventHandler}}
-        
+
 sub, _ := sm.Subscribe(subscriberId, entityEventTypeMap, false)
 // check for errors first
 ```
